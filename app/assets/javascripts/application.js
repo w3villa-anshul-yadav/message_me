@@ -15,5 +15,9 @@
 //= require turbolinks
 //= require_tree .
 //= require jquery3
-//= require popper
-//= require bootstrap
+// Loads all Semantic javascripts
+//= require semantic-ui
+
+$(document).on("turbolinks:load", () => {
+  $(".ui.dropdown").dropdown();
+});
