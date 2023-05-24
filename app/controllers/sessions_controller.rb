@@ -1,6 +1,5 @@
 class SessionsController < ApplicationController
-     def new
-
+    def new
     end
 
     def create
@@ -12,9 +11,9 @@ class SessionsController < ApplicationController
         else
             flash[:alert] = 'Login failed!! check User Name and Password'
             render 'new'
-       end
-        
+       end   
     end
+    
     def destroy
         session[:user_id] = nil
         flash[:notice]='Logged Out Sucessfully'
