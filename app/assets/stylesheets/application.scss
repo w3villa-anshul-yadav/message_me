@@ -33,8 +33,13 @@
     display: flex;
     justify-content: center;
 }
-
-
+ .pointing{
+    justify-content: center;
+    margin-top: 2rem !important;
+}
+.msger-input:focus {
+    background: white;
+}
 
 
 
@@ -69,8 +74,8 @@ html {
     display: flex;
     flex-flow: column wrap;
     justify-content: space-between;
-    margin: 80px auto;
-    height: 500px;
+    margin: 10px auto;
+    height: 530px;
     border: var(--border);
     border-radius: 5px;
     background: var(--msger-bg);
@@ -148,21 +153,21 @@ html {
     font-size: 0.85em;
 }
 
-.left-msg .msg-bubble {
+#left-msg .msg-bubble {
     border-bottom-left-radius: 0;
 }
 
-.right-msg {
+#right-msg {
     flex-direction: row-reverse;
 }
 
-.right-msg .msg-bubble {
+#right-msg .msg-bubble {
     background: var(--right-msg-bg);
     color: #fff;
     border-bottom-right-radius: 0;
 }
 
-.right-msg .msg-img {
+#right-msg .msg-img {
     margin: 0 0 0 10px;
 }
 

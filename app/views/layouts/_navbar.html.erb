@@ -9,7 +9,7 @@
         <div class="right menu">
             <div class="ui dropdown item">
                 <% if logged_in? %>
-                    <%= current_user.user_name %>
+                   <div id='current-user'><%= current_user.user_name.capitalize %></div> 
                 <% else %>
                     Account
                 <% end %>

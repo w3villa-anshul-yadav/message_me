@@ -6,6 +6,7 @@ class UsersController < ApplicationController
          @user = User.new(params.require(:user).permit(:user_name,:password))
          if @user.save
             flash[:notice] ="Signed Up Sucessfully"
+            session[:user_id]=@user.id
             redirect_to root_path
          else
             render 'new'
